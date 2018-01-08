@@ -22,6 +22,7 @@ RUN cd /home/texlive-install-temp \
 # "tlmgr install glossaries". If that doesn't work the file is in a larger package, so do
 # a search on https://ctan.org/search/, but note that the most relevant result is often
 # not listed first (or even close to the start). 
-RUN tlmgr install memoir glossaries xkeyval mfirstuc etoolbox textcase xfor datatool substr fp xcolor
+RUN tlmgr install memoir glossaries xkeyval mfirstuc etoolbox textcase xfor datatool \
+                  substr fp xcolor environ trimspaces pgf
 
 WORKDIR /project
